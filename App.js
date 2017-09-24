@@ -1,9 +1,12 @@
-'use strict'
+'use strict';
 
 import React from 'react';
 import { StyleSheet, Text, View, Button, TextInput, Image, NavigatorIOS } from 'react-native';
 
 import MyScene from './components/MyScene.js';
+
+const REQUEST_URL = 'https://thisisatestsitefromgabrielma.com/wp-json/wp/v2/posts/';
+const fetchedData = fetch(REQUEST_URL);
 
 export default class App extends React.Component {
 
@@ -46,7 +49,10 @@ export default class App extends React.Component {
       console.log('LearnMore Pressed!');
     }
     function onPressGo(){
+      
       console.log('Go Pressed!');
+      console.log(fetchedData);
+      
     }
   }
 }
