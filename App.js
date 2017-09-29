@@ -12,7 +12,8 @@ export default class App extends React.Component {
   render() {
     return (
       
-      <View style={Style.container}>
+      
+      <View style={{flex: 1, flexDirection:'column'}}>
         
         <NavigatorIOS initialRoute={{ component: MyScene, title: 'My Initial Scene', }} style={Style.nav} />
         

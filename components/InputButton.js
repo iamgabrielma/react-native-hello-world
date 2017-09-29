@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import Style from '../assets/Style.js';
 
 export default class InputButton extends Component {
     
     render() {
         return (
-            <View>
-                <Text>{this.props.value}</Text>
+            <View style={Style.inputButton}>
+                <Text style={Style.inputButtonText}>{this.props.value}</Text>
             </View>
         )
     }

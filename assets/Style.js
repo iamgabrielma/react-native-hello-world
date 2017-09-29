@@ -15,6 +15,17 @@ const Style = StyleSheet.create({
     paddingTop: 5,
     paddingBottom: 5,
   },
+  calContainer: {
+    flex: 1,
+  },
+  displayContainer: {
+      flex: 2,
+      backgroundColor: '#193441',
+  },
+  inputContainer: {
+      flex: 8,
+      backgroundColor: '#3E606F',
+  },
   nav: {
     flex: 1,
   },
@@ -35,6 +46,19 @@ const Style = StyleSheet.create({
   image: {
     width: 217,
     height: 138,
+  },
+  inputButton: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderWidth: 0.5,
+      borderColor: '#91AA9D'
+  },
+  inputButtonText: {
+      flex: 1,
+      fontSize: 22,
+      fontWeight: 'bold',
+      color: 'white'
   },
   inputRow: {
       flex: 1,

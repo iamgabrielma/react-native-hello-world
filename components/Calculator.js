@@ -15,14 +15,11 @@ const inputButtons = [
 export default class Calculator extends Component {
   	render() {
 	    return (
-	        <View style={{flex: 1}}> 
-	            <View style={{flex: 2, backgroundColor: '#193441'}}>
-					<Text>Background colors?</Text>
-	            </View>
-	            <View style={{flex: 8, backgroundColor: '#3E606F'}}>
-					<Text>Background colors?</Text>
-					{this.renderInputButtons()}
-	            </View>
+	        <View style={Style.calContainer}> 
+    			<View style={Style.displayContainer}></View>
+    			<View style={Style.inputContainer}>
+    				{this.renderInputButtons()}
+    			</View>
 	        </View>
 	    );
   	}
@@ -49,10 +46,3 @@ export default class Calculator extends Component {
         return views;
     }
 }
-
-// const styles = StyleSheet.create({
-//   inputRow: {
-//       flex: 1,
-//       flexDirection: 'row'
-//   }
-// });
